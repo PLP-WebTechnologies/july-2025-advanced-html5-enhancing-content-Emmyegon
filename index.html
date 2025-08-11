@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Web Page Example</title>
+ 
+</head>
+<body>
+    <header>
+        <h1>Comprehensive Web Page Example</h1>
+        <p>Showcasing HTML5 elements and features</p>
+    </header>
+
+    <!-- Lists Section -->
+    <section id="lists">
+        <h2>Types of Lists</h2>
+        
+        <article>
+            <h3>Unordered List (Features)</h3>
+            <ul>
+                <li>Responsive Design</li>
+                <li>HTML5 Semantic Elements</li>
+                <li>Accessibility Features</li>
+                <li>Native Form Validation</li>
+            </ul>
+        </article>
+        
+        <article>
+            <h3>Ordered List (Steps)</h3>
+            <ol>
+                <li>Review the content</li>
+                <li>Check the structure</li>
+                <li>Test the form validation</li>
+                <li>Provide feedback</li>
+            </ol>
+        </article>
+        
+        <article>
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language - the structure of web pages</dd>
+                
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets - the presentation of web pages</dd>
+                
+                <dt>JavaScript</dt>
+                <dd>The programming language of the web</dd>
+            </dl>
+        </article>
+    </section>
+
+    <!-- Tables Section -->
+    <section id="tables">
+        <h2>Sample Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Wireless Mouse</td>
+                    <td>Electronics</td>
+                    <td>$24.99</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Mechanical Keyboard</td>
+                    <td>Electronics</td>
+                    <td>$89.99</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>Notebook</td>
+                    <td>Stationery</td>
+                    <td>$4.99</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>1004</td>
+                    <td>Desk Lamp</td>
+                    <td>Furniture</td>
+                    <td>$32.50</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total Items</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>Media Examples</h2>
+        <div class="media-container">
+            <div class="media-item">
+                <h3>Image</h3>
+                <img src="https://via.placeholder.com/400x300" alt="Placeholder image showing dimensions 400x300">
+                <p>Sample image with alt text for accessibility</p>
+            </div>
+            
+            <div class="media-item">
+                <h3>Video</h3>
+                <video width="400" height="300" controls>
+                    <source src="2278095-hd_1920_1080_30fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>HTML5 video element with fallback text</p>
+            </div>
+            
+            <div class="media-item">
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="sample.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>HTML5 audio element with controls</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML5 Form Section -->
+    <section id="form">
+        <h2>Registration Form</h2>
+        <form id="registration" method="post" novalidate>
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fullname">Full Name*</label>
+                <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name">
+                
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                
+                <label for="dob">Date of Birth*</label>
+                <input type="date" id="dob" name="dob" required max="2020-01-01">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Account Details</legend>
+                
+                <label for="username">Username*</label>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="20" placeholder="4-20 characters">
+                
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Create a password">
+                
+                <label for="confirm-password">Confirm Password*</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <label for="subscription">Subscription Type</label>
+                <select id="subscription" name="subscription">
+                    <option value="free">Free</option>
+                    <option value="basic">Basic ($5/month)</option>
+                    <option value="premium">Premium ($10/month)</option>
+                </select>
+                
+                <label>Interests (Select at least one)</label>
+                <div>
+                    <input type="checkbox" id="tech" name="interests" value="tech" required>
+                    <label for="tech" style="display: inline;">Technology</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports" style="display: inline;">Sports</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music" style="display: inline;">Music</label>
+                </div>
+                
+                <label>Preferred Contact Method*</label>
+                <div>
+                    <input type="radio" id="contact-email" name="contact" value="email" required checked>
+                    <label for="contact-email" style="display: inline;">Email</label>
+                </div>
+                <div>
+                    <input type="radio" id="contact-phone" name="contact" value="phone">
+                    <label for="contact-phone" style="display: inline;">Phone</label>
+                </div>
+                <div>
+                    <input type="radio" id="contact-text" name="contact" value="text">
+                    <label for="contact-text" style="display: inline;">Text Message</label>
+                </div>
+                
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" rows="4" maxlength="500" placeholder="Tell us about yourself (max 500 characters)"></textarea>
+            </fieldset>
+            
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" style="display: inline;">I agree to the terms and conditions*</label>
+            </div>
+            
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Comprehensive Web Page Example. All rights reserved.</p>
+    </footer>
+</body>
+</html>
